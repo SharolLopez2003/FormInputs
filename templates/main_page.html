@@ -14,34 +14,37 @@
     <div id="banner" class="container">
       <h1 class="display-4">ItBeLikeThatSometimes</h1>
       <form action="" method="get" class="form-example"></form>
-     <div class="form-example">
-            <label for="Age">Enter your Age: </label>
-            <input type="text" name="Age" id="Age" required>
-    </div>
+
     <div class="container">
       <form action="{{ url_for('process_inputs') }}" method="post">
+         <div class="form-group">
+            <label for="Age">What is your age </label>
+            <input class="form-control" name="input_dropdown" id="input_dropdown" required>
+            <option>You got ligma</option>
+            <option>You got ligma</option>
+        </select>
+    </div>
         <div class="form-group">
-          <label for="input_name">First Name</label>
-          <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="Fred Flintstone">
+          <label for="input_name">Full Name</label>
+          <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="The Cat In The Hat">
         </div>
         <div class="form-group">
-          <label for="input_dropdown">Example select</label>
-          <select class="form-control" name="input_dropdown" id="input_dropdown">
-            <option>1 fish</option>
-            <option>2 fish</option>
-            <option>red fish</option>
-            <option>the spanish inquisition</option>
-            <option>blue fish</option>
+          <label for="input_dropdown">What Was Your OUF?</label>
+          <select class="form-control" name="input_dropdown" id="input_dropdown" placeholder="Your OUF">
+            <option>You got ligma</option>
+            <option>You gave your opinion</option>
+            <option>You skrattah deu flouradeu mane</option>
+            <option>You forgot to leave your socks on</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="input_select">Example multiple select</label>
-          <select multiple class="form-control" name="input_select" id="input_select">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+          <label for="input_select">Choose Your Fighter</label>
+          <select class="form-control" name="input_dropdown" id="input_dropdown" placeholder="Your Fighter">
+            <option>Orange shirt guy</option>
+            <option>Forever alone guy</option>
+            <option>Mr. Beast</option>
+            <option>Bongo cat</option>
+            <option>tracer</option>
           </select>
         </div>
         <div class="form-group">
