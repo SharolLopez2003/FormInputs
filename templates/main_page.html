@@ -18,19 +18,21 @@
     <div class="container">
       <form action="{{ url_for('process_inputs') }}" method="post">
          <div class="form-group">
-            <label for="Age">What is your age </label>
-            <input class="form-control" name="input_dropdown" id="input_dropdown" required>
-            <option>You got ligma</option>
-            <option>You got ligma</option>
+            <label for="Age">What is your age? </label>
+            <select class="form-control">
+            <option disabled selected>Your age</option>
+            <option>9</option>
+            <option>21</option>
         </select>
     </div>
         <div class="form-group">
           <label for="input_name">Full Name</label>
-          <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="The Cat In The Hat">
+          <input type="text" class="form-control" name="input_name"  id="input_name">
         </div>
         <div class="form-group">
           <label for="input_dropdown">What Was Your OUF?</label>
-          <select class="form-control" name="input_dropdown" id="input_dropdown" placeholder="Your OUF">
+          <select class="form-control" name="input_dropdown" id="input_dropdown" >
+            <option disabled selected>Your oof</option>
             <option>You got ligma</option>
             <option>You gave your opinion</option>
             <option>You skrattah deu flouradeu mane</option>
@@ -39,7 +41,8 @@
         </div>
         <div class="form-group">
           <label for="input_select">Choose Your Fighter</label>
-          <select class="form-control" name="input_dropdown" id="input_dropdown" placeholder="Your Fighter">
+          <select class="form-control" name="input_dropdown" id="input_dropdown" >
+            <option disabled selected>Your fighter</option>
             <option>Orange shirt guy</option>
             <option>Forever alone guy</option>
             <option>Mr. Beast</option>
@@ -47,13 +50,10 @@
             <option>tracer</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="input_freeform">Example textarea</label>
-          <textarea class="form-control" name="input_freeform" id="input_freeform" rows="3"></textarea>
-        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
+        </div>
     <div class="container">
       {% if input_data %} {{ input_data }} {% endif %}
       <br />

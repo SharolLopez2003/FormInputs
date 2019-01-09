@@ -13,4 +13,4 @@ def process_inputs():
     select = request.form.get('input_select', '')
     freeform = request.form.get('input_freeform', '')
     return render_template("main_page.html", input_data=dropdown,
-                           output="That' a megga big oof chief %s, let's prey to our lord and savior Pewdiepie to repent our sins." % name)
+                           output="??? Why would you do that? well, that's a megga big oof chief %s, let's prey to our lord and savior, Pewdiepie, to repent our sins." % name)
